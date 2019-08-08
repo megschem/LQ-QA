@@ -1,0 +1,50 @@
+/* GLOBAL */
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 50px);
+}
+
+.hamburger {
+  grid-column: 11 / 12;
+  grid-row: 1 / 2;
+  align-self: end;
+}
+
+/* MENU PAGE */
+.menu-page .item {
+  grid-column: 2 / 12;
+  justify-self: center;
+}
+
+.menu-page .home {
+  grid-row: 2 / 3;
+}
+
+.menu-page .search {
+  grid-row: 3 / 5;
+}
+
+.menu-page .support {
+  grid-row: 4 / 6;
+}
+
+.menu-page .privacy {
+  grid-row: 5 / 7;
+}
+
+.menu-page .service {
+  grid-row: 6 / 8;
+}
+
+/* HOME-PAGE */
+.home-page .item {
+  grid-column: 2 / 12;
+  justify-self: center;
+}
+
+.home-page .logo {
+  grid-row: 1 / 4;
+}
+
