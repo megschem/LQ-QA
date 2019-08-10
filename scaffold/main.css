@@ -1,50 +1,65 @@
 /* GLOBAL */
-
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-template-rows: repeat(12, 50px);
 }
 
-.hamburger {
-  grid-column: 11 / 12;
-  grid-row: 1 / 2;
-  align-self: end;
-}
-
-/* MENU PAGE */
-.menu-page .item {
+nav {
   grid-column: 2 / 12;
-  justify-self: center;
+  grid-row: 1 / 2;
+  align-self: center;
+}
+.search-box {
+  width: 200px;
+  display: inline-block;
+  padding: .5rem;
+  background-color: grey;
 }
 
-.menu-page .home {
-  grid-row: 2 / 3;
+.hamburger {
+  display: inline-block;
 }
 
-.menu-page .search {
-  grid-row: 3 / 5;
+main {
+  grid-column: 2 / 12;
 }
-
-.menu-page .support {
-  grid-row: 4 / 6;
-}
-
-.menu-page .privacy {
-  grid-row: 5 / 7;
-}
-
-.menu-page .service {
-  grid-row: 6 / 8;
-}
+/* GLOBAL END */
 
 /* HOME-PAGE */
-.home-page .item {
+.home-page header {
   grid-column: 2 / 12;
+  grid-row: 1 / 4;
+  align-self: center;
   justify-self: center;
 }
 
-.home-page .logo {
-  grid-row: 1 / 4;
+header .logo {
+  display: inline-block;
+  background-color: green;
+  width: 150px;
+  height: 150px;
 }
+
+header .hamburger {
+  text-align: end;
+}
+
+.home-page main {
+  justify-self: center;
+  text-align: center;
+}
+/* HOME PAGE END */
+
+/* MENU PAGE */
+.menu-page nav {
+  grid-column: 11 / 12;
+  grid-row: 1 / 2;
+}
+
+.menu-page main {
+  justify-self: center;
+  text-align: center;
+}
+/* MENU PAGE END*/
 
